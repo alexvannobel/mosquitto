@@ -63,8 +63,6 @@ set (MOSQ_SRCS
 	will_delay.c
 	../lib/will_mosq.c ../lib/will_mosq.h)
 
-
-option(WITH_BUNDLED_DEPS "Build with bundled dependencies?" ON)
 if (WITH_BUNDLED_DEPS)
 	include_directories(${mosquitto_SOURCE_DIR} ${mosquitto_SOURCE_DIR}/src/deps)
 endif (WITH_BUNDLED_DEPS)

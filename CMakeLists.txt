@@ -79,6 +79,8 @@ endif (WITH_THREADING)
 
 option(DOCUMENTATION "Build documentation?" ON)
 
+option(WITH_BUNDLED_DEPS "Build with bundled dependencies?" ON)
+
 option(WITH_DLT "Include DLT support?" OFF)
 message(STATUS "WITH_DLT = ${WITH_DLT}")
 if (WITH_DLT)
